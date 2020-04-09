@@ -8,7 +8,7 @@ https://docs.djangoproject.com/en/2.2/topics/settings/
 
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
-"""
+""" 
 
 import os
 
@@ -79,8 +79,12 @@ WSGI_APPLICATION = 'newdjango_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dbqc0j33pa6nf3',
+        'USER': 'agkvlmycerkurq',
+        'PASSWORD':'64a7fad07180d1d2d946a63240a9f02f057cff2ce0365786eace05ea5eb105c9',
+        'HOST': 'ec2-50-17-21-170.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
